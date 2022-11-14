@@ -20,15 +20,15 @@
 <body>
 
     <article>
-        <span id="score" class="score">Score:
-            <span id="score-value">0%</span>
+        <span id="score" class="score">Grade:
+            <span id="score-value">0.000%</span>
         </span>
-        <div class="color"></div>
+        <div id="color" class="color"></div>
 
         <div class="buttons">
-            <button id="guess1" class="guess1">#FF0000</button>
-            <button id="guess2" class="guess2">#00FF00</button>
-            <button id="guess3" class="guess3">#0000FF</button>
+            <button id="guess1" class="guess1" onclick="checkGuess('guess1')">#FF0000</button>
+            <button id="guess2" class="guess2" onclick="checkGuess('guess2')">#00FF00</button>
+            <button id="guess3" class="guess3" onclick="checkGuess('guess3')">#0000FF</button>
         </div>
 
         <span id="feedback" class="feedback">Guess the color.</span>
