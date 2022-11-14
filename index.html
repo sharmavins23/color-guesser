@@ -9,6 +9,9 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
     <!-- Scripts -->
     <script src="main.js" defer></script>
@@ -16,13 +19,20 @@
 
 <body>
 
-    <div class="color"></div>
+    <article>
+        <span id="score" class="score">Score:
+            <span id="score-value">0%</span>
+        </span>
+        <div class="color"></div>
 
-    <div class="buttons">
-        <button id="guess1" class="guess1"></button>
-        <button id="guess2" class="guess2"></button>
-        <button id="guess3" class="guess3"></button>
-    </div>
+        <div class="buttons">
+            <button id="guess1" class="guess1">#FF0000</button>
+            <button id="guess2" class="guess2">#00FF00</button>
+            <button id="guess3" class="guess3">#0000FF</button>
+        </div>
+
+        <span id="feedback" class="feedback">Guess the color.</span>
+    </article>
 
 </body>
 
